@@ -6,11 +6,11 @@
 ### AIM:
    To implement the Holt Winters Method Model using Python.
 ### ALGORITHM:
-1. Load and resample the gold price data to monthly frequency, selecting the 'Price' column.
+1. Load and resample the seattle weather data to monthly frequency, selecting the 'Prcp' column.
 2. Scale the data using Minmaxscaler then split into training (80%) and testing (20%) sets.
 3. Fit an additive Holt-Winters model to the training data and forecast on the test data.
 4. Evaluate model performance using MAE and RMSE, and plot the train, test, and prediction results.
-5. Train a final multiplicative Holt-Winters model on the full dataset and forecast future gold prices.
+5. Train a final multiplicative Holt-Winters model on the full dataset and forecast seattle weather.
 ### PROGRAM:
 ```
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
